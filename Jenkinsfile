@@ -12,6 +12,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'Testing The App'
+            echo 'Get The Diver Path ${ChromeDriverPath}}'
           }
         }
 
@@ -24,5 +25,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    ChromeDriverPath = 'C:\\Driver\\test.exe'
   }
 }
