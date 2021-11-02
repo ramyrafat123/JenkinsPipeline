@@ -16,6 +16,12 @@ pipeline {
           }
         }
 
+        stage('TestLog') {
+          steps {
+            echo 'Message Log'
+          }
+        }
+
       }
     }
 
